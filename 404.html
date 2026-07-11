@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | ShieldGuard</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#1E7A3A', secondary: '#F59E0B', darkbg: '#0F172A' } } } }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased bg-gray-50 dark:bg-darkbg min-h-screen flex flex-col">
+    <!-- Navbar (Minimal) -->
+    <nav class="w-full bg-white/90 dark:bg-darkbg/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 h-20 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo/logo.svg" alt="Logo" class="h-10">
+                <span class="font-bold text-2xl dark:text-white">ShieldGuard</span>
+            </a>
+            <div class="flex items-center gap-4">
+                <button class="theme-toggle text-gray-500 hover:text-primary"><i class="fas fa-moon dark:hidden"></i><i class="fas fa-sun hidden dark:block text-yellow-400"></i></button>
+                <button class="dir-toggle text-gray-500 hover:text-primary"><i class="fas fa-language"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-lg w-full text-center animate-fade-in">
+            <!-- 404 Illustration placeholder using FontAwesome/Text -->
+            <div class="mb-8 relative inline-block">
+                <h1 class="text-9xl font-bold text-gray-200 dark:text-gray-800 font-poppins">404</h1>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <i class="fas fa-bug text-6xl text-primary transform -rotate-45"></i>
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Looks like the bugs got to this page!</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-8">We can't seem to find the page you're looking for. It might have been removed or the link is temporarily unavailable.</p>
+            
+            <a href="index.html" class="btn-primary justify-center text-lg py-3 px-8">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

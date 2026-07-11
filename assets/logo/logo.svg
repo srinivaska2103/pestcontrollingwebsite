@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+    <!-- Shield Background -->
+    <path d="M256 32C150 32 64 64 64 64v192c0 132.5 192 224 192 224s192-91.5 192-224V64s-86-32-192-32z" fill="#1E7A3A" />
+    
+    <!-- Home Outline -->
+    <path d="M256 120L130 220h30v140h60v-80h72v80h60V220h30L256 120z" fill="#FFFFFF" />
+    
+    <!-- Leaf / Pest Protection Concept overlay -->
+    <path d="M256 260c-30-30-60-10-60 20s30 50 60 50 60-20 60-50-30-50-60-20z" fill="#F59E0B" />
+</svg>
