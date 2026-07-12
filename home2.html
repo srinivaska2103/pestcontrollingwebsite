@@ -46,13 +46,13 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-3 xl:gap-6">
-                    <a href="index.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Home</a>
+                    <a href="index.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Home</a>
                     <a href="home2.html" class="nav-link text-primary font-semibold transition">Home 2</a>
-                    <a href="aboutus.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">About</a>
-                    <a href="services.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Services</a>
-                    <a href="gallery.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Gallery</a>
-                    <a href="pricing.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Pricing</a>
-                    <a href="contact.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Contact</a>
+                    <a href="aboutus.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Services</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Gallery</a>
+                    <a href="pricing.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Contact</a>
                 </div>
                 <div class="hidden lg:flex items-center gap-2 xl:gap-4">
                     <button class="theme-toggle text-gray-500 hover:text-primary p-2 transition" title="Toggle Dark/Light Mode">
@@ -60,8 +60,8 @@
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
                     <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
-                    <a href="login.html" class="btn-secondary text-sm px-5 py-2 rounded-lg font-semibold transition shadow-sm hover:shadow">Login</a>
-                    <a href="booknow.html" class="btn-primary text-sm px-5 py-2">Book Now</a>
+                    <a href="login.html" class="btn-secondary text-sm w-28 py-2 text-center">Login</a>
+                    <a href="booknow.html" class="btn-primary text-sm w-28 py-2 text-center">Book Now</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
@@ -97,46 +97,39 @@
     <main>
         <!-- 1. Premium Hero Section -->
         <section
-            class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-darkbg overflow-hidden">
-            <!-- Decorative Background Elements -->
-            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/10 blur-3xl"></div>
-            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-secondary/10 blur-3xl"></div>
+            class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[80vh] flex items-center">
+            
+            <!-- Background Image & Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/home2hero" alt="Pest Control Background" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gray-900/70 dark:bg-gray-900/80 backdrop-blur-[2px]"></div>
+            </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="lg:grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="mb-12 lg:mb-0 animate-fade-in-up">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-6">Premium
-                            Pest Management</span>
-                        <h1
-                            class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6 font-poppins">
-                            Your Trusted Partner for <span
-                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Safe &
-                                Effective</span> Pest Control
-                        </h1>
-                        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed">
-                            Protect your home and business with eco-friendly, professional pest management solutions
-                            delivered by certified experts.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                            <a href="booknow.html"
-                                class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:-translate-y-1 text-center">Book
-                                Free Inspection</a>
-                            <a href="pricing.html"
-                                class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-lg hover:border-primary dark:hover:border-primary transition-all hover:-translate-y-1 shadow-sm text-center">
-                                Get Instant Quote
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="relative lg:ml-10 animate-fade-in">
-                        <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                            <div
-                                class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10">
-                            </div>
-                            <img src="assets/home2hero" alt="Pest Control Professional"
-                                class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="animate-fade-in-up">
+                    <span
+                        class="inline-block py-1.5 px-4 rounded-full bg-primary/20 text-green-400 border border-primary/30 text-sm font-semibold mb-6 tracking-wide">
+                        Premium Pest Management
+                    </span>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 font-poppins drop-shadow-lg">
+                        Your Trusted Partner for <br class="hidden md:block" /> <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-accent">Safe &
+                            Effective</span> Pest Control
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow">
+                        Protect your home and business with eco-friendly, professional pest management solutions
+                        delivered by certified experts.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="booknow.html"
+                            class="btn-primary text-lg px-8 py-4 shadow-lg shadow-primary/40 hover:shadow-primary/60 transition-all hover:-translate-y-1 text-center">
+                            Book Free Inspection
+                        </a>
+                        <a href="pricing.html"
+                            class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold bg-white/10 text-white border border-white/30 rounded-full hover:bg-white/20 hover:border-white transition-all hover:-translate-y-1 backdrop-blur-md shadow-lg text-center">
+                            Get Instant Quote
+                        </a>
                     </div>
                 </div>
             </div>
@@ -737,110 +730,7 @@
             </div>
         </section>
 
-        <!-- 9. FAQ Section -->
-        <section class="py-20 bg-gray-50 dark:bg-darkbg">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white font-poppins">Frequently
-                        Asked Questions</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden faq-item transition-all duration-300">
-                        <button
-                            class="w-full text-left px-6 py-5 font-semibold text-gray-900 dark:text-white flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary faq-toggle">
-                            Are treatments safe for my family and pets?
-                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                        </button>
-                        <div class="px-6 pb-5 text-gray-600 dark:text-gray-400 hidden faq-content">
-                            Yes! We prioritize safety above all else. Our treatments utilize EPA-approved, eco-friendly
-                            products that are tough on pests but completely safe for humans and pets when applied
-                            correctly by our certified technicians.
-                        </div>
-                    </div>
-                    <!-- FAQ 2 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden faq-item transition-all duration-300">
-                        <button
-                            class="w-full text-left px-6 py-5 font-semibold text-gray-900 dark:text-white flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary faq-toggle">
-                            How long does a typical treatment take?
-                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                        </button>
-                        <div class="px-6 pb-5 text-gray-600 dark:text-gray-400 hidden faq-content">
-                            A standard residential treatment usually takes between 30 to 60 minutes depending on the
-                            size of your property and the specific pest issues. Specialized treatments like bed bug heat
-                            eradication or termite barrier installation will take longer.
-                        </div>
-                    </div>
-                    <!-- FAQ 3 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden faq-item transition-all duration-300">
-                        <button
-                            class="w-full text-left px-6 py-5 font-semibold text-gray-900 dark:text-white flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary faq-toggle">
-                            Is there a warranty or guarantee?
-                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                        </button>
-                        <div class="px-6 pb-5 text-gray-600 dark:text-gray-400 hidden faq-content">
-                            Absolutely. We offer a 100% satisfaction guarantee. If targeted pests return between your
-                            scheduled visits, we will return and re-treat your property at no additional cost to you.
-                        </div>
-                    </div>
-                    <!-- FAQ 4 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden faq-item transition-all duration-300">
-                        <button
-                            class="w-full text-left px-6 py-5 font-semibold text-gray-900 dark:text-white flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary faq-toggle">
-                            How much does it cost?
-                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                        </button>
-                        <div class="px-6 pb-5 text-gray-600 dark:text-gray-400 hidden faq-content">
-                            Costs vary based on the size of your home, the type of pest, and the severity of the
-                            infestation. Our basic prevention plans start at $49/month. We offer free inspections to
-                            provide you with an exact, no-obligation quote.
-                        </div>
-                    </div>
-                    <!-- FAQ 5 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden faq-item transition-all duration-300">
-                        <button
-                            class="w-full text-left px-6 py-5 font-semibold text-gray-900 dark:text-white flex justify-between items-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary faq-toggle">
-                            Can I book online?
-                            <i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i>
-                        </button>
-                        <div class="px-6 pb-5 text-gray-600 dark:text-gray-400 hidden faq-content">
-                            Yes, you can easily schedule a free inspection or service appointment through our website
-                            using the "Book Now" buttons, or you can call us directly for immediate assistance.
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const toggles = document.querySelectorAll('.faq-toggle');
-                        toggles.forEach(toggle => {
-                            toggle.addEventListener('click', () => {
-                                const content = toggle.nextElementSibling;
-                                const icon = toggle.querySelector('i');
-
-                                // Close others
-                                toggles.forEach(t => {
-                                    if (t !== toggle) {
-                                        t.nextElementSibling.classList.add('hidden');
-                                        t.querySelector('i').classList.remove('rotate-180');
-                                    }
-                                });
-
-                                // Toggle current
-                                content.classList.toggle('hidden');
-                                icon.classList.toggle('rotate-180');
-                            });
-                        });
-                    });
-                </script>
-            </div>
-        </section>
+      
 
         <!-- 10. Free Inspection CTA -->
         <section class="py-24 relative overflow-hidden bg-primary dark:bg-gray-900">

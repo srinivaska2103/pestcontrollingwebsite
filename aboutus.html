@@ -38,13 +38,13 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-3 xl:gap-6">
-                    <a href="index.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Home</a>
-                    <a href="home2.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Home 2</a>
+                    <a href="index.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Home</a>
+                    <a href="home2.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Home 2</a>
                     <a href="aboutus.html" class="nav-link text-primary font-semibold transition">About</a>
-                    <a href="services.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Services</a>
-                    <a href="gallery.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Gallery</a>
-                    <a href="pricing.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Pricing</a>
-                    <a href="contact.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Contact</a>
+                    <a href="services.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Services</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Gallery</a>
+                    <a href="pricing.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition">Contact</a>
                 </div>
                 <div class="hidden lg:flex items-center gap-2 xl:gap-4">
                     <button class="theme-toggle text-gray-500 hover:text-primary p-2 transition" title="Toggle Dark/Light Mode">
@@ -52,8 +52,8 @@
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
                     <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
-                    <a href="login.html" class="btn-secondary text-sm px-5 py-2 rounded-lg font-semibold transition shadow-sm hover:shadow">Login</a>
-                    <a href="booknow.html" class="btn-primary text-sm px-5 py-2">Book Now</a>
+                    <a href="login.html" class="btn-secondary text-sm w-28 py-2 text-center">Login</a>
+                    <a href="booknow.html" class="btn-primary text-sm w-28 py-2 text-center">Book Now</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
@@ -88,32 +88,41 @@
 
     <main>
         <!-- 1. Hero -->
-        <section class="relative pt-32 pb-20 bg-gray-50 dark:bg-darkbg overflow-hidden">
-            <div class="max-w-7xl mx-auto px-4 lg:grid lg:grid-cols-2 gap-12 lg:items-stretch">
-                <div class="mb-12 lg:mb-0 animate-fade-in flex flex-col justify-center">
-                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                        Protecting Homes & Businesses with Trusted Pest Control Solutions</h1>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">We deliver safe, effective, and
-                        eco-friendly pest control services using modern techniques and certified professionals. Our
-                        mission is to create healthier, pest-free environments for every customer.</p>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="booknow.html"
-                            class="inline-flex items-center justify-center gap-2 bg-primary text-white hover:bg-primary/90 font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 text-lg">
-                            <i class="far fa-calendar-check"></i> Book Free Inspection
-                        </a>
-                        <a href="contact.html"
-                            class="inline-flex items-center justify-center gap-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 hover:bg-gray-50 dark:hover:bg-gray-700 font-bold py-3 px-8 rounded-xl transition-all shadow-sm hover:shadow-md hover:-translate-y-1 text-lg">
-                            <i class="fas fa-phone-alt text-primary fa-flip-horizontal"></i> Contact Our Team
-                        </a>
+        <section class="relative pt-32 pb-20 bg-[#FAFAFA] dark:bg-darkbg overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
+                    
+                    <!-- Text Content -->
+                    <div class="mb-12 lg:mb-0 animate-fade-in">
+                        <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-[#0F172A] dark:text-white leading-[1.15] tracking-tight mb-6 font-poppins">
+                            Protecting Homes & Businesse Control Solutions
+                        </h1>
+                        <p class="text-[17px] text-gray-500 dark:text-gray-400 mb-10 leading-relaxed pr-4 lg:pr-12">
+                            We deliver safe, effective, and eco-friendly pest control services using modern techniques and certified professionals. Our mission is to create healthier, pest-free environments for every customer.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="booknow.html"
+                                class="inline-flex items-center justify-center gap-2 bg-[#1E7A3A] text-white hover:bg-[#166534] font-bold py-3.5 px-7 rounded-lg transition-all shadow-md shadow-primary/20 hover:-translate-y-0.5 text-[15px]">
+                                <i class="far fa-calendar-check text-lg"></i> Book Free Inspection
+                            </a>
+                            <a href="contact.html"
+                                class="inline-flex items-center justify-center gap-2 bg-white dark:bg-gray-800 text-[#0F172A] dark:text-white border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 font-bold py-3.5 px-7 rounded-lg transition-all shadow-sm hover:shadow hover:-translate-y-0.5 text-[15px]">
+                                <i class="fas fa-phone-alt text-[#1E7A3A]"></i> Contact Our Team
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="relative lg:ml-10 animate-fade-in min-h-[400px] lg:min-h-0 h-full">
-                    <div
-                        class="absolute -z-10 -bottom-6 -right-6 w-full h-full rounded-2xl bg-primary/10 border border-primary/20 hidden md:block">
+                    
+                    <!-- Image Content -->
+                    <div class="relative animate-fade-in mt-10 lg:mt-0">
+                        <div class="relative w-full aspect-[4/3] max-w-lg mx-auto lg:max-w-none">
+                            <!-- Offset Background -->
+                            <div class="absolute -z-10 -bottom-5 -right-5 w-full h-full rounded-2xl bg-[#E8F3EB] dark:bg-primary/10 border border-primary/10 dark:border-primary/20"></div>
+                            <!-- Image -->
+                            <img src="assets/abthero" alt="Pest Control Professionals"
+                                class="w-full h-full object-cover rounded-2xl shadow-xl z-10">
+                        </div>
                     </div>
-                    <img src="assets/abthero" alt="Pest Control Professionals"
-                        class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl z-10">
+                    
                 </div>
             </div>
         </section>
@@ -223,7 +232,7 @@
                     <div
                         class="absolute -z-10 -bottom-6 -left-6 w-full h-full rounded-2xl bg-primary/10 border border-primary/20 hidden md:block">
                     </div>
-                    <img src="assets/Pest Control Expert" alt="Pest Control Expert"
+                    <img src="assets/Ants" alt="Pest Control Expert"
                         class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl z-10">
                 </div>
 
@@ -576,7 +585,7 @@
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Government-Approved
                                     Chemicals</h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">All products we use are strictly regulated
+                                <p class="text-gray-600 dark:text-gray-400">All products we use are strictly regulated
                                     and approved by local health and safety authorities.</p>
                             </div>
                         </li>
@@ -588,7 +597,7 @@
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Eco-Friendly Products
                                 </h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">We prioritize biodegradable and
+                                <p class="text-gray-600 dark:text-gray-400">We prioritize biodegradable and
                                     environmentally responsible solutions whenever possible.</p>
                             </div>
                         </li>
@@ -600,7 +609,7 @@
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Child-Safe & Pet-Safe
                                     Treatments</h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">Our advanced formulations target pests
+                                <p class="text-gray-600 dark:text-gray-400">Our advanced formulations target pests
                                     precisely without risking the health of your loved ones or pets.</p>
                             </div>
                         </li>
@@ -612,34 +621,11 @@
                             <div>
                                 <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">PPE-Equipped
                                     Technicians</h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">Our staff is fully equipped with Personal
+                                <p class="text-gray-600 dark:text-gray-400">Our staff is fully equipped with Personal
                                     Protective Equipment (PPE) to ensure a safe, hygienic application process.</p>
                             </div>
                         </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-spray-can text-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Modern Spraying
-                                    Equipment</h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">We utilize the latest application technology
-                                    for precise, efficient, and mess-free treatments.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div
-                                class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-clipboard-check text-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Industry Best Practices
-                                </h4>
-                                <p class="text-gray-600 dark:text-gray-400 font-semibold">Our protocols are continuously updated to
-                                    reflect the latest advancements in pest management science.</p>
-                            </div>
-                        </li>
+                       
                     </ul>
                 </div>
 
@@ -657,99 +643,7 @@
 
       
 
-        <!-- 9. FAQ Section -->
-        <section class="py-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 animate-fade-in">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked
-                        Questions</h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-400">Everything you need to know about our pest
-                        control services.</p>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <details
-                        class="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-                        <summary
-                            class="flex justify-between items-center font-bold text-lg p-6 text-gray-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
-                            Are your treatments safe?
-                            <span class="transition group-open:rotate-180">
-                                <i class="fas fa-chevron-down text-primary"></i>
-                            </span>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                            Yes, all our treatments are strictly regulated, government-approved, and entirely safe for
-                            both children and pets. We prioritize eco-friendly and biodegradable solutions.
-                        </div>
-                    </details>
-
-                    <!-- FAQ 2 -->
-                    <details
-                        class="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-                        <summary
-                            class="flex justify-between items-center font-bold text-lg p-6 text-gray-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
-                            How long does a service take?
-                            <span class="transition group-open:rotate-180">
-                                <i class="fas fa-chevron-down text-primary"></i>
-                            </span>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                            A standard residential treatment typically takes between 1 to 2 hours, depending on the size
-                            of the property and the specific pest issue.
-                        </div>
-                    </details>
-
-                    <!-- FAQ 3 -->
-                    <details
-                        class="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-                        <summary
-                            class="flex justify-between items-center font-bold text-lg p-6 text-gray-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
-                            Do you provide warranties?
-                            <span class="transition group-open:rotate-180">
-                                <i class="fas fa-chevron-down text-primary"></i>
-                            </span>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                            Absolutely. We stand by the quality of our work. Most of our services come with a 30 to
-                            90-day warranty. If pests return during this period, we will re-treat at no additional cost.
-                        </div>
-                    </details>
-
-                    <!-- FAQ 4 -->
-                    <details
-                        class="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-                        <summary
-                            class="flex justify-between items-center font-bold text-lg p-6 text-gray-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
-                            How often should pest control be done?
-                            <span class="transition group-open:rotate-180">
-                                <i class="fas fa-chevron-down text-primary"></i>
-                            </span>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                            For optimal protection, we recommend scheduling professional pest control services quarterly
-                            (every 3 months). However, severe infestations may require more frequent visits initially.
-                        </div>
-                    </details>
-
-                    <!-- FAQ 5 -->
-                    <details
-                        class="group bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
-                        <summary
-                            class="flex justify-between items-center font-bold text-lg p-6 text-gray-900 dark:text-white list-none [&::-webkit-details-marker]:hidden">
-                            What pests do you treat?
-                            <span class="transition group-open:rotate-180">
-                                <i class="fas fa-chevron-down text-primary"></i>
-                            </span>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-600 dark:text-gray-400">
-                            We handle a wide variety of pests, including termites, rodents, cockroaches, bed bugs, ants,
-                            mosquitoes, spiders, and even provide wildlife control services.
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- 10. Final Call to Action -->
         <section
