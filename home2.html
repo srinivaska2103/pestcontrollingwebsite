@@ -33,56 +33,42 @@
 <body class="antialiased selection:bg-primary selection:text-white">
 
     <!-- Navbar -->
-    <nav id="navbar"
-        class="fixed w-full z-50 bg-white/90 dark:bg-darkbg/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-all duration-300">
+    <nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-darkbg/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-3">
                         <img src="assets/logo/logo.svg" alt="ShieldGuard Logo" class="h-10 w-10">
-                        <span
-                            class="font-bold text-2xl text-gray-900 dark:text-white tracking-tight font-poppins">ShieldGuard</span>
+                        <span class="font-bold text-2xl text-gray-900 dark:text-white tracking-tight font-poppins">ShieldGuard</span>
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-3 xl:gap-6">
-                    <a href="index.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Home</a>
+                    <a href="index.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Home</a>
                     <a href="home2.html" class="nav-link text-primary font-semibold transition">Home 2</a>
-                    <a href="aboutus.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">About</a>
-                    <a href="services.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Services</a>
-                    <a href="gallery.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Gallery</a>
-                    <a href="pricing.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Pricing</a>
-                    <a href="contact.html"
-                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Contact</a>
+                    <a href="aboutus.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">About</a>
+                    <a href="services.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Services</a>
+                    <a href="gallery.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Gallery</a>
+                    <a href="pricing.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Pricing</a>
+                    <a href="contact.html" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary transition">Contact</a>
                 </div>
                 <div class="hidden lg:flex items-center gap-2 xl:gap-4">
-                    <button class="theme-toggle text-gray-500 hover:text-primary p-2 transition"
-                        title="Toggle Dark/Light Mode">
+                    <button class="theme-toggle text-gray-500 hover:text-primary p-2 transition" title="Toggle Dark/Light Mode">
                         <i class="fas fa-moon dark:hidden text-xl"></i>
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
-                    <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i
-                            class="fas fa-language text-xl"></i></button>
-                    <a href="login.html"
-                        class="bg-secondary text-white hover:opacity-90 text-sm px-5 py-2 rounded-lg font-semibold transition shadow-sm hover:shadow">Login</a>
+                    <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
+                    <a href="login.html" class="btn-secondary text-sm px-5 py-2 rounded-lg font-semibold transition shadow-sm hover:shadow">Login</a>
                     <a href="booknow.html" class="btn-primary text-sm px-5 py-2">Book Now</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
-                    <button id="mobileMenuBtn"
-                        class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i
-                            class="fas fa-bars text-2xl"></i></button>
+                    <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
                 </div>
             </div>
         </div>
-        <div id="mobileMenu"
-            class="hidden lg:hidden bg-white dark:bg-darkbg border-t border-gray-200 dark:border-gray-800 absolute w-full shadow-lg">
+        <div id="mobileMenu" class="hidden lg:hidden bg-white dark:bg-darkbg border-t border-gray-200 dark:border-gray-800 absolute w-full shadow-lg">
             <div class="px-4 py-6 space-y-1">
                 <a href="index.html" class="block px-3 py-2 text-gray-700 dark:text-gray-300">Home</a>
                 <a href="home2.html" class="block px-3 py-2 text-primary font-medium">Home 2</a>
@@ -93,21 +79,16 @@
                 <a href="contact.html" class="block px-3 py-2 text-gray-700 dark:text-gray-300">Contact</a>
                 <div class="pt-4 mt-2 border-t border-gray-200 dark:border-gray-700 flex flex-col gap-2">
                     <div class="flex justify-center gap-4 mb-2">
-                        <button
-                            class="theme-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
+                        <button class="theme-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
                             <i class="fas fa-moon dark:hidden text-xl"></i>
                             <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                         </button>
-                        <button
-                            class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
+                        <button class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
                             <i class="fas fa-language text-xl"></i>
                         </button>
                     </div>
-                    <a href="login.html"
-                        class="block w-full text-center px-3 py-2 bg-secondary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
-                    <a href="booknow.html"
-                        class="block w-full text-center px-3 py-2 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book
-                        Now</a>
+                    <a href="login.html" class="block w-full text-center px-3 py-2 bg-secondary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
+                    <a href="booknow.html" class="block w-full text-center px-3 py-2 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book Now</a>
                 </div>
             </div>
         </div>
@@ -519,7 +500,7 @@
                             <i class="fas fa-award text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Warranty Included</h3>
-                        <p class="text-gray-600 dark:text-gray-400">We stand by our work. If pests return, so do we at
+                        <p class="text-gray-600 dark:text-gray-400">We stand Warranty by our work. If pests return, so do we at
                             no extra cost.</p>
                     </div>
                 </div>
@@ -862,9 +843,8 @@
         </section>
 
         <!-- 10. Free Inspection CTA -->
-        <section class="py-24 relative overflow-hidden">
+        <section class="py-24 relative overflow-hidden bg-primary dark:bg-gray-900">
             <!-- Background Image with Overlay -->
-            
 
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 font-poppins drop-shadow-md">Get Your Property
@@ -887,7 +867,7 @@
         </section>
     </main>
    <!-- Footer -->
-    <footer class="bg-white dark:bg-darkbg border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+     <footer class="bg-white dark:bg-darkbg border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 
@@ -924,8 +904,7 @@
                         <li><a href="home2.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Home 2</a></li>
                         <li><a href="aboutus.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">About Us</a></li>
                         <li><a href="services.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Services</a></li>
-                        <li><a href="signup.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Sign Up</a></li>
-
+                         <li><a href="pricing.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Pricing</a></li>
                     </ul>
                 </div>
 
@@ -933,7 +912,7 @@
                 <div>
                     <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-6 font-poppins">Resources</h4>
                     <ul class="space-y-3">
-                                          <li><a href="pricing.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Pricing</a></li>
+                                         
                         <li><a href="contact.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Contact</a></li>
                         <li><a href="login.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">User Portal</a></li>
                         <li><a href="booknow.html" class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Book Now</a></li>
