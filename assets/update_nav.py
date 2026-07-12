@@ -28,8 +28,8 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
                     <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
-                    <a href="login.html" class="bg-secondary text-white hover:opacity-90 text-sm px-5 py-2 rounded-lg font-semibold transition shadow-sm hover:shadow">Login</a>
-                    <a href="booknow.html" class="btn-primary text-sm px-5 py-2">Book Now</a>
+                    <a href="login.html" class="btn-secondary text-sm w-28 py-2 text-center">Login</a>
+                    <a href="booknow.html" class="btn-primary text-sm w-28 py-2 text-center">Book Now</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
@@ -63,7 +63,7 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
     </nav>"""
 
 active_desk = "text-primary font-semibold"
-inactive_desk = "text-gray-600 dark:text-gray-300 hover:text-primary"
+inactive_desk = "text-gray-600 dark:text-gray-300 hover:text-primary font-medium"
 active_mob = "text-primary font-medium"
 inactive_mob = "text-gray-700 dark:text-gray-300"
 
