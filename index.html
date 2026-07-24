@@ -429,292 +429,130 @@
 
        
 
-        <!-- Combined Booking & Process Section -->
-        <section class="py-20 bg-gray-50 dark:bg-gray-900 border-y border-gray-200 dark:border-gray-800">
-            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:grid lg:grid-cols-12 gap-12 items-start">
-                    
-                    <!-- Left Column: Quick Booking (col-span-4) -->
-                    <div class="lg:col-span-4 mb-16 lg:mb-0">
-                        <div class="bg-white dark:bg-gray-800/80 rounded-3xl p-8 shadow-xl border border-gray-100 dark:border-gray-700 relative overflow-hidden h-full">
-                            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-                            
-                            <div class="relative z-10">
-                                <div class="text-center mb-8">
-                                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">Quick Booking</h2>
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm">Schedule your free inspection in less than a minute.</p>
-                                </div>
-                                
-                                <form class="space-y-5" onsubmit="event.preventDefault(); alert('Booking request sent!');">
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
-                                        <input type="text" placeholder="John Doe" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number</label>
-                                        <input type="tel" placeholder="(555) 000-0000" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Property Type</label>
-                                        <select required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all appearance-none">
-                                            <option value="" disabled selected>Select Property</option>
-                                            <option value="residential">Residential</option>
-                                            <option value="commercial">Commercial</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Preferred Date</label>
-                                        <input type="date" required class="w-full px-4 py-2.5 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
-                                    </div>
-                                    <div class="pt-4 text-center">
-                                        <button type="submit" class="w-full bg-primary hover:opacity-90 text-white font-bold text-lg py-3 px-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
-                                            Book Now
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: How It Works (col-span-8) -->
-                    <div class="lg:col-span-8">
-                        <div class="mb-10 text-center lg:text-left">
-                            <h3 class="text-primary font-bold tracking-wider uppercase mb-2">How It Works</h3>
-                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Proven Process</h2>
-                            <p class="text-gray-600 dark:text-gray-400">A simple, transparent, and highly effective timeline to rid your property of pests.</p>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <!-- Step 1 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">1</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-calendar-check"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Book Appointment</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Schedule a convenient time for our experts to visit your property online or over the phone.</p>
-                            </div>
-                            <!-- Step 2 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">2</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Free Inspection</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">We conduct a thorough, no-obligation inspection to assess the extent of infestation.</p>
-                            </div>
-                            <!-- Step 3 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">3</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-bug"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Pest Identification</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Our specialists accurately identify the pest species and root causes of their presence.</p>
-                            </div>
-                            <!-- Step 4 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">4</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-flask"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Customized Treatment</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">We formulate a targeted, eco-friendly treatment plan tailored specifically to your property.</p>
-                            </div>
-                            <!-- Step 5 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">5</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-shield-virus"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Safe Pest Removal</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">Execution of the treatment plan using safe methods that protect your family and pets.</p>
-                            </div>
-                            <!-- Step 6 -->
-                            <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm relative group">
-                                <div class="absolute -top-4 -left-4 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md border-2 border-white dark:border-gray-900 z-10">6</div>
-                                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl mb-4">
-                                    <i class="fas fa-clipboard-check"></i>
-                                </div>
-                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Follow-Up Visit</h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm">We return to ensure complete eradication and set up preventative measures for the future.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
+        
+        
+        
+        <!-- Modern Combined Booking & Process Section -->
+        <section class="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 relative">
+            <!-- Decorative background elements -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+                <div class="absolute top-1/4 -left-1/4 w-1/2 h-1/2 bg-primary/5 rounded-full blur-[120px]"></div>
+                <div class="absolute bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-accent/5 rounded-full blur-[120px]"></div>
             </div>
-        </section>
 
-        <!-- Pricing Section -->
-        <section class="py-20 bg-white dark:bg-darkbg">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h3 class="text-primary font-bold tracking-wider uppercase mb-2">Pricing Plans</h3>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Transparent & Affordable</h2>
-                    <p class="text-gray-600 dark:text-gray-400">Choose the right protection plan for your home or business. No hidden fees, just effective pest control.</p>
-                </div>
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Basic Plan -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow flex flex-col">
-                        <div class="mb-6 text-center">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Basic Protection</h4>
-                            <div class="text-4xl font-bold text-primary mb-2">$49<span class="text-lg text-gray-500 dark:text-gray-400 font-normal">/mo</span></div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Ideal for preventative maintenance</p>
+                <!-- Our Proven Process (Full Width Top) -->
+                <div class="mb-20 text-center max-w-3xl mx-auto">
+                    <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4 tracking-wider uppercase border border-primary/20">How It Works</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">Our Proven Process</h2>
+                    <p class="text-gray-500 dark:text-gray-400 text-lg">A simple, transparent, and highly effective timeline to rid your property of pests.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+                    <!-- Step 1 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">01</div>
                         </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-gray-600 dark:text-gray-300">
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Quarterly exterior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Basic interior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Cobweb removal</li>
-                            <li class="flex items-center gap-3 text-gray-400 dark:text-gray-500"><i class="fas fa-times"></i> Termite inspection</li>
-                            <li class="flex items-center gap-3 text-gray-400 dark:text-gray-500"><i class="fas fa-times"></i> Mosquito control</li>
-                        </ul>
-                        <a href="booknow.html" class="btn-primary w-full justify-center">Choose Basic</a>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Book Appointment</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Schedule a convenient time for our experts to visit your property online or over the phone.</p>
                     </div>
-                    
-                    <!-- Premium Plan -->
-                    <div class="bg-primary rounded-2xl p-8 shadow-xl transform md:-translate-y-4 flex flex-col relative overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wide">Most Popular</div>
-                        <div class="mb-6 text-center text-white">
-                            <h4 class="text-xl font-bold mb-2">Premium Shield</h4>
-                            <div class="text-4xl font-bold mb-2">$89<span class="text-lg text-white/80 font-normal">/mo</span></div>
-                            <p class="text-white/80 text-sm">Complete peace of mind</p>
+                    <!-- Step 2 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">02</div>
                         </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-white/90">
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-secondary"></i> Bi-monthly exterior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-secondary"></i> Comprehensive interior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-secondary"></i> Cobweb & wasp nest removal</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-secondary"></i> Annual termite inspection</li>
-                            <li class="flex items-center gap-3 text-white/50"><i class="fas fa-times"></i> Mosquito fogging</li>
-                        </ul>
-                        <a href="booknow.html" class="bg-white text-primary font-bold py-3 px-6 rounded-full w-full flex justify-center hover:bg-gray-100 transition-colors shadow-lg">Choose Premium</a>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Free Inspection</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">We conduct a thorough, no-obligation inspection to assess the extent of infestation.</p>
                     </div>
-                    
-                    <!-- Ultimate Plan -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow flex flex-col">
-                        <div class="mb-6 text-center">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Ultimate Guard</h4>
-                            <div class="text-4xl font-bold text-primary mb-2">$149<span class="text-lg text-gray-500 dark:text-gray-400 font-normal">/mo</span></div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm">Total property protection</p>
+                    <!-- Step 3 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">03</div>
                         </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-gray-600 dark:text-gray-300">
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Monthly exterior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> On-demand interior treatment</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Full perimeter defense</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Advanced termite protection</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Seasonal mosquito fogging</li>
-                        </ul>
-                        <a href="booknow.html" class="btn-primary w-full justify-center">Choose Ultimate</a>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Pest Identification</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Our specialists accurately identify the pest species and root causes of their presence.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">04</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Customized Treatment</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">We formulate a targeted, eco-friendly treatment plan tailored specifically to your property.</p>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">05</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Safe Pest Removal</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Execution of the treatment plan using safe methods that protect your family and pets.</p>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="bg-white dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center text-2xl group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="text-5xl font-black text-gray-100 dark:text-gray-700/50 group-hover:text-primary/20 transition-colors duration-300">06</div>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Follow-Up Visit</h4>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">We return to ensure complete eradication and set up preventative measures for the future.</p>
                     </div>
                 </div>
-                <div class="mt-8 text-center">
-                    <p class="text-gray-600 dark:text-gray-400 text-sm">Need a custom plan for your commercial property? <a href="contact.html" class="text-primary font-semibold hover:underline">Contact us</a>.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Featured Projects -->
-        <section class="py-20 bg-white dark:bg-darkbg">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h3 class="text-primary font-bold tracking-wider uppercase mb-2">Our Portfolio</h3>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
-                    <p class="text-gray-600 dark:text-gray-400">See how we've helped homeowners and businesses maintain pest-free environments with our targeted solutions.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project 1 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Residential Pest Control" alt="Residential Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Residential</div>
+                <!-- Floating Horizontal Quick Booking Bar -->
+                <div class="bg-white dark:bg-gray-800 rounded-[2rem] p-4 md:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 dark:border-gray-700 max-w-6xl mx-auto transform -translate-y-10 relative z-20">
+                    <form class="flex flex-col lg:flex-row items-end gap-4" onsubmit="event.preventDefault(); alert('Booking request sent!');">
+                        <div class="w-full lg:w-1/5">
+                            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wide px-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full px-5 py-4 rounded-xl border-none bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary outline-none transition-all text-sm font-medium">
                         </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Residential Pest Control</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">A complete interior and exterior treatment for a 4-bedroom family home facing a severe ant infestation.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">100% Ant Eradication within 48 hours</span></p>
-                            </div>
+                        <div class="w-full lg:w-1/5">
+                            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wide px-2">Phone</label>
+                            <input type="tel" placeholder="(555) 000-0000" required class="w-full px-5 py-4 rounded-xl border-none bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary outline-none transition-all text-sm font-medium">
                         </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Restaurant Treatment" alt="Restaurant Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Commercial</div>
+                        <div class="w-full lg:w-1/5">
+                            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wide px-2">Property</label>
+                            <select required class="w-full px-5 py-4 rounded-xl border-none bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary outline-none transition-all text-sm font-medium appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
                         </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Restaurant Treatment</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Discreet, after-hours roach control and kitchen sanitization for a high-end downtown restaurant.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">Passed health inspection with score</span></p>
-                            </div>
+                        <div class="w-full lg:w-1/5">
+                            <label class="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wide px-2">Date</label>
+                            <input type="date" required class="w-full px-5 py-4 rounded-xl border-none bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary outline-none transition-all text-sm font-medium text-gray-500">
                         </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Hotel Pest Management" alt="Hotel Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Hospitality</div>
+                        <div class="w-full lg:w-1/5">
+                            <button type="submit" class="w-full h-[56px] bg-primary hover:bg-primary-dark text-white font-bold text-base rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                                <span>Book Now</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Hotel Pest Management</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Comprehensive bed bug heat treatment and preventative barrier spray across 50 guest.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">Zero guest complaints for 12+ months</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Warehouse Rodent Control" alt="Warehouse" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Industrial</div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Warehouse Control</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Large-scale rodent baiting and entry point sealing for a 50,000 sq ft logistics facility.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">Eliminated stock damage entirely</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Office Disinfection" alt="Office Space" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Corporate</div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Office Disinfection</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Routine preventative pest control combined with deep disinfection for a corporate office building.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">Safe, pest-free workspace for 200+</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6 -->
-                    <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 group flex flex-col">
-                        <div class="relative h-64 overflow-hidden shrink-0">
-                            <img src="assets/Apartment Termite Treatmen" alt="Apartment Building" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 bg-white/90 dark:bg-darkbg/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full">Multi-Family</div>
-                        </div>
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Apartment Termite</h4>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">Multi-unit termite inspection and targeted liquid barrier treatment for an older apartment complex.</p>
-                            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-                                <p class="text-sm"><span class="font-bold text-gray-900 dark:text-white">Outcome:</span> <span class="text-accent font-semibold">Halted structural damage, saved building</span></p>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
+
 
        <!-- 5. Testimonials -->
         <section class="py-20 bg-gray-50 dark:bg-gray-900">
