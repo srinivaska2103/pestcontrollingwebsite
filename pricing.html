@@ -40,9 +40,11 @@
                         <i class="fas fa-moon dark:hidden text-xl"></i>
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
-                    <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
-                    <a href="login.html" class="btn-secondary text-sm w-28 py-2 text-center">Login</a>
-                    <a href="booknow.html" class="btn-primary text-sm w-28 py-2 text-center">Book</a>
+                    <button class="dir-toggle text-gray-500 hover:text-primary p-2 flex items-center justify-center" title="Toggle Language">
+                        <span class="font-bold text-sm">LTR</span>
+                    </button>
+                    <a href="login.html" class="btn-primary text-sm w-28 py-3 text-center">Login</a>
+                    <a href="booknow.html" class="btn-primary text-sm w-28 py-3 text-center">Book</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
@@ -64,12 +66,12 @@
                             <i class="fas fa-moon dark:hidden text-xl"></i>
                             <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                         </button>
-                        <button class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
-                            <i class="fas fa-language text-xl"></i>
+                        <button class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center items-center">
+                            <span class="font-bold text-sm">LTR</span>
                         </button>
                     </div>
-                    <a href="login.html" class="block w-full text-center px-3 py-2 bg-secondary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
-                    <a href="booknow.html" class="block w-full text-center px-3 py-2 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book Now</a>
+                    <a href="login.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
+                    <a href="booknow.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book</a>
                 </div>
             </div>
         </div>
@@ -436,7 +438,7 @@
                 </details>
 
                 <!-- FAQ 5 -->
-                <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                <details class="faq-extra hidden group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900 dark:text-white font-semibold text-lg hover:text-primary transition-colors">
                         Can I reschedule my appointment?
                         <span class="relative size-5 shrink-0">
@@ -450,7 +452,7 @@
                 </details>
 
                 <!-- FAQ 6 -->
-                <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                <details class="faq-extra hidden group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900 dark:text-white font-semibold text-lg hover:text-primary transition-colors">
                         Which payment methods are accepted?
                         <span class="relative size-5 shrink-0">
@@ -464,7 +466,7 @@
                 </details>
 
                 <!-- FAQ 7 -->
-                <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                <details class="faq-extra hidden group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900 dark:text-white font-semibold text-lg hover:text-primary transition-colors">
                         Is commercial pest control available?
                         <span class="relative size-5 shrink-0">
@@ -478,7 +480,7 @@
                 </details>
 
                 <!-- FAQ 8 -->
-                <details class="group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
+                <details class="faq-extra hidden group bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-gray-900 dark:text-white font-semibold text-lg hover:text-primary transition-colors">
                         Do I need to leave my home during treatment?
                         <span class="relative size-5 shrink-0">
@@ -491,6 +493,29 @@
                     </p>
                 </details>
             </div>
+            
+            <div class="mt-8 text-center">
+                <button id="viewAllFaqsBtn" class="btn-primary px-8 py-3 rounded-xl font-bold transition-all shadow-md">
+                    View All FAQs
+                </button>
+            </div>
+            
+            <script>
+                document.getElementById('viewAllFaqsBtn').addEventListener('click', function() {
+                    const extraFaqs = document.querySelectorAll('.faq-extra');
+                    const isHidden = extraFaqs[0].classList.contains('hidden');
+                    
+                    extraFaqs.forEach(faq => {
+                        if (isHidden) {
+                            faq.classList.remove('hidden');
+                        } else {
+                            faq.classList.add('hidden');
+                        }
+                    });
+                    
+                    this.textContent = isHidden ? 'Show Less FAQs' : 'View All FAQs';
+                });
+            </script>
         </div>
 
         <!-- Final Call-to-Action -->

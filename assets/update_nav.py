@@ -27,9 +27,11 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
                         <i class="fas fa-moon dark:hidden text-xl"></i>
                         <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                     </button>
-                    <button class="dir-toggle text-gray-500 hover:text-primary p-2" title="Toggle Language"><i class="fas fa-language text-xl"></i></button>
-                    <a href="login.html" class="btn-secondary text-sm w-28 py-2 text-center">Login</a>
-                    <a href="booknow.html" class="btn-primary text-sm w-28 py-2 text-center">Book Now</a>
+                    <button class="dir-toggle text-gray-500 hover:text-primary p-2 flex items-center justify-center" title="Toggle Language">
+                        <span class="font-bold text-sm">LTR</span>
+                    </button>
+                    <a href="login.html" class="btn-primary text-sm w-28 py-3 text-center">Login</a>
+                    <a href="booknow.html" class="btn-primary text-sm w-28 py-3 text-center">Book</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="mobileMenuBtn" class="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white p-2"><i class="fas fa-bars text-2xl"></i></button>
@@ -51,12 +53,12 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
                             <i class="fas fa-moon dark:hidden text-xl"></i>
                             <i class="fas fa-sun hidden dark:block text-yellow-400 text-xl"></i>
                         </button>
-                        <button class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center">
-                            <i class="fas fa-language text-xl"></i>
+                        <button class="dir-toggle text-gray-500 hover:text-primary p-2 transition bg-gray-100 dark:bg-gray-800 rounded-lg w-full flex justify-center items-center">
+                            <span class="font-bold text-sm">LTR</span>
                         </button>
                     </div>
-                    <a href="login.html" class="block w-full text-center px-3 py-2 bg-secondary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
-                    <a href="booknow.html" class="block w-full text-center px-3 py-2 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book Now</a>
+                    <a href="login.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
+                    <a href="booknow.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book</a>
                 </div>
             </div>
         </div>
