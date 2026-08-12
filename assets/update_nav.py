@@ -30,7 +30,7 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
                     <button class="dir-toggle text-gray-500 hover:text-primary p-2 flex items-center justify-center" title="Toggle Language">
                         <span class="font-bold text-sm">LTR</span>
                     </button>
-                    <a href="login.html" class="btn-primary text-sm w-28 py-3 text-center">Login</a>
+                    <a href="login.html" class="btn-outline-primary text-sm w-28 py-2.5 text-center">Login</a>
                     <a href="booknow.html" class="btn-primary text-sm w-28 py-3 text-center">Book</a>
                 </div>
                 <div class="lg:hidden flex items-center gap-4">
@@ -57,7 +57,7 @@ nav_template = """<nav id="navbar" class="fixed w-full z-50 bg-white/90 dark:bg-
                             <span class="font-bold text-sm">LTR</span>
                         </button>
                     </div>
-                    <a href="login.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Login</a>
+                    <a href="login.html" class="block w-full text-center px-3 py-3 border-2 border-primary text-primary dark:border-green-400 dark:text-green-400 rounded-lg font-semibold hover:bg-primary hover:text-white transition">Login</a>
                     <a href="booknow.html" class="block w-full text-center px-3 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition">Book</a>
                 </div>
             </div>
